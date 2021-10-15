@@ -6,6 +6,8 @@ export default class DemoImage extends Component {
     return (
       <View>
         <Text> textInComponent </Text>
+        <Text>Hahsdasd</Text>
+        <Text>Hahsdasd</Text>
       </View>
     );
   }

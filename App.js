@@ -6,6 +6,7 @@ import DemoStyle from './src/Buoi1/DemoStyle';
 import DemoStyleSheet from './src/Buoi2/DemoStyle';
 import DemoFlex from './src/Buoi2/DemoFlex';
 import DemoImage from './src/Buoi2/DemoImage';
+import BindingData from './src/Buoi3/BindingData';
 //Stateful Component
 class App extends Component {
   render() {
@@ -17,7 +18,8 @@ class App extends Component {
       //   <View style={{backgroundColor: '#F4B940', flex: 1}} />
       // </View>
       // <DemoFlex />
-      <DemoImage />
+      <BindingData />
+      // <DemoImage />
     );
   }
 }
