@@ -5,23 +5,34 @@ export default class DemoStyle extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.purpleContainer}>
-          <Text>Purple: #C9C9FF</Text>
+        <View style={boxStyle}>
+          <Text style={textStyle}>Purple:#C9C9FF </Text>
         </View>
-        <View style={styles.blueContainer}>
-          <Text>Blue: #3D85C6</Text>
+        <View style={boxStyle}>
+          <Text style={textStyle}>Blue: #3D85C6</Text>
         </View>
-        <View style={styles.greenContainer}>
-          <Text>Green: #96CC96</Text>
+        <View style={boxStyle}>
+          <Text style={textStyle}>Green: #96CC96</Text>
         </View>
-        <View style={styles.yellowContainer}>
-          <Text>Yellow: #F4B940</Text>
+        <View style={boxStyle}>
+          <Text style={textStyle}>Yellow: #F4B940</Text>
         </View>
       </View>
     );
   }
 }
-
+const boxStyle = {
+  borderRadius: 10,
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: '#C9C9FF',
+  height: 150,
+  marginTop: 10,
+  // marginLeft:
+};
+const textStyle = {
+  fontWeight: '900',
+};
 const styles = StyleSheet.create({
   container: {
     width: '100%',
