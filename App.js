@@ -9,6 +9,7 @@ import DemoImage from './src/Buoi2/DemoImage';
 import BindingData from './src/Buoi3/BindingData';
 import Excercise from './src/Buoi3/Excercise';
 import RenderList from './src/Buoi3/RenderList';
+import HomeWorkBuoi_3 from './src/Buoi3/Homework';
 //Stateful Component
 class App extends Component {
   render() {
@@ -22,7 +23,8 @@ class App extends Component {
       // <DemoFlex />
       // <BindingData />
       // <Excercise />
-      <RenderList />
+      // <RenderList />
+      <HomeWorkBuoi_3 />
     );
   }
 }
