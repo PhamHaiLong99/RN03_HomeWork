@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import {EMOJI} from '../../constants/Emoji';
 export class index extends Component {
   state = {
