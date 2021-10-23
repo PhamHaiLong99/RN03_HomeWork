@@ -10,21 +10,18 @@ import BindingData from './src/Buoi3/BindingData';
 import Excercise from './src/Buoi3/Excercise';
 import RenderList from './src/Buoi3/RenderList';
 import HomeWorkBuoi_3 from './src/Buoi3/Homework';
+import DemoFlatList from './src/Buoi4/DemoFlatList';
+// import HomeWorkBuoi_4 from './src/Buoi4/HomeWork';
+
 //Stateful Component
+import RocketPaperScissor from './src/Buoi5/RocketPaperScissor';
 class App extends Component {
   render() {
     return (
-      // <View style={{flex: 1}}>
-      //   <View style={{backgroundColor: '#C9C9FF', flex: 1}} />
-      //   <View style={{backgroundColor: '#3D85C6', flex: 1}} />
-      //   <View style={{backgroundColor: '#96CC96', flex: 1}} />
-      //   <View style={{backgroundColor: '#F4B940', flex: 1}} />
-      // </View>
-      // <DemoFlex />
-      // <BindingData />
-      // <Excercise />
-      // <RenderList />
-      <HomeWorkBuoi_3 />
+      //
+      <DemoFlatList />
+      // <RocketPaperScissor />
+      // <HomeWorkBuoi_4 />
     );
   }
 }

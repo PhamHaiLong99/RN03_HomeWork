@@ -3,5 +3,6 @@
   "bracket-pair-colorizer-2.colors": [],
   "indentRainbow.colors": [],
   "window.zoomLevel": 0.5,
-  "editor.fontLigatures": false
+  "editor.fontLigatures": false,
+  "cSpell.diagnosticLevel": "Hint"
 }

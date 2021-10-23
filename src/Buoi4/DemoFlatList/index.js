@@ -1,93 +1,106 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, FlatList, Text} from 'react-native';
-import Alto_icon from '../../Buoi3/RenderList/images/Alto_icon.png';
-import Alto_0 from '../../Buoi3/RenderList/images/Alto_0.png';
-import GameInfo from './GameInfo';
+import {
+  View,
+  StyleSheet,
+  FlatList,
+  Text,
+  Image,
+  SectionList,
+  ScrollView,
+} from 'react-native';
+import Alto_icon from '../../../assets/Alto_icon.png';
+import Alto_0 from '../../../assets/Alto_0.png';
+import Game from './Game';
+import {
+  blackwindow,
+  captain,
+  flash,
+  ironman,
+  spiderman,
+  strange,
+  suppergirl,
+  wanda,
+  wonderwoman,
+  yasuo,
+} from './images';
 
+import Header from './Header';
 export default class DemoFlatList extends Component {
   listGameInfo = [
     {
-      title: "Alto's Odyssey",
-      icon: Alto_icon,
-      subTitle:
-        'Just beyond the horizon sits a majestic desert, vast and unexplored.',
+      title: 'Strange',
+      icon: strange,
+      subTitle: '15 bạn chung',
       preview: Alto_0,
-      backgroundColor: '#824671CC',
+      backgroundColor: '#ddd',
     },
 
     {
-      title: "Alto's Odyssey",
-      icon: Alto_icon,
-      subTitle:
-        'Just beyond the horizon sits a majestic desert, vast and unexplored.',
+      title: 'Kara',
+      icon: suppergirl,
+      subTitle: '15 bạn chung',
       preview: Alto_0,
-      backgroundColor: '#F4B940',
+      backgroundColor: '#ddd',
     },
     {
-      title: "Alto's Odyssey",
-      icon: Alto_icon,
-      subTitle:
-        'Just beyond the horizon sits a majestic desert, vast and unexplored.',
+      title: 'Diana',
+      icon: wonderwoman,
+      subTitle: '15 bạn chung',
       preview: Alto_0,
-      backgroundColor: '#96CC96',
+      backgroundColor: '#ddd',
     },
     {
-      title: "Alto's Odyssey",
-      icon: Alto_icon,
-      subTitle:
-        'Just beyond the horizon sits a majestic desert, vast and unexplored.',
+      title: 'Natasha',
+      icon: blackwindow,
+      subTitle: '15 bạn chung',
       preview: Alto_0,
-      backgroundColor: '#824671CC',
+      backgroundColor: '#ddd',
     },
 
     {
-      title: "Alto's Odyssey",
-      icon: Alto_icon,
-      subTitle:
-        'Just beyond the horizon sits a majestic desert, vast and unexplored.',
+      title: 'Strange',
+      icon: strange,
+      subTitle: '15 bạn chung',
       preview: Alto_0,
-      backgroundColor: '#F4B940',
+      backgroundColor: '#ddd',
     },
     {
-      title: "Alto's Odyssey",
-      icon: Alto_icon,
-      subTitle:
-        'Just beyond the horizon sits a majestic desert, vast and unexplored.',
+      title: 'Kara',
+      icon: suppergirl,
+      subTitle: '15 bạn chung',
       preview: Alto_0,
-      backgroundColor: '#96CC96',
+      backgroundColor: '#ddd',
     },
     {
-      title: "Alto's Odyssey",
-      icon: Alto_icon,
-      subTitle:
-        'Just beyond the horizon sits a majestic desert, vast and unexplored.',
+      title: 'Diana',
+      icon: wonderwoman,
+      subTitle: '15 bạn chung',
       preview: Alto_0,
-      backgroundColor: '#824671CC',
+      backgroundColor: '#dddddd',
     },
 
     {
-      title: "Alto's Odyssey",
-      icon: Alto_icon,
-      subTitle:
-        'Just beyond the horizon sits a majestic desert, vast and unexplored.',
+      title: 'Natasha',
+      icon: blackwindow,
+      subTitle: '15 bạn chung',
       preview: Alto_0,
-      backgroundColor: '#F4B940',
+      backgroundColor: '#dddddd',
     },
     {
-      title: "Alto's Odyssey",
-      icon: Alto_icon,
-      subTitle:
-        'Just beyond the horizon sits a majestic desert, vast and unexplored.',
+      title: 'Strange',
+      icon: strange,
+      subTitle: '15 bạn chung',
       preview: Alto_0,
-      backgroundColor: '#96CC96',
+      backgroundColor: '#dddddd',
     },
   ];
 
-  renderItem = ({item}) => <GameInfo game={item} />;
+  renderItem = ({item}) => <Game game={item} />;
 
   render() {
     return (
       <View style={styles.container}>
+        <Header />
         <View style={styles.scrollContainer}>
           <FlatList
             contentContainerStyle={styles.scrollContent}
@@ -104,24 +117,16 @@ export default class DemoFlatList extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#343434',
+    backgroundColor: '#f2f2f2',
     flex: 1,
   },
   scrollContainer: {
-    marginVertical: 50,
-    // backgroundColor: 'gray',
+    marginHorizontal: 10,
+    flex: 4,
   },
   scrollContent: {
     justifyContent: 'center',
-    // alignItems: 'center',
+    alignItems: 'center',
     paddingBottom: 50,
-  },
-  info: {
-    width: '90%',
-    marginTop: 20,
-    borderRadius: 10,
-    paddingVertical: 20,
-    paddingHorizontal: 10,
-    backgroundColor: 'gray',
   },
 });
