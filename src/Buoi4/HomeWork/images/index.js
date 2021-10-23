@@ -1,4 +1,4 @@
-import blackwindow from './blackwindow.jpeg';
+import blackwindow from './blackwidow.jpeg';
 import captain from './captain.jpg';
 import flash from './flash.jpg';
 import ironman from './ironman.jpeg';

@@ -11,7 +11,7 @@ import Excercise from './src/Buoi3/Excercise';
 import RenderList from './src/Buoi3/RenderList';
 import HomeWorkBuoi_3 from './src/Buoi3/Homework';
 import DemoFlatList from './src/Buoi4/DemoFlatList';
-// import HomeWorkBuoi_4 from './src/Buoi4/HomeWork';
+import HomeWorkBuoi_4 from './src/Buoi4/HomeWork';
 
 //Stateful Component
 import RocketPaperScissor from './src/Buoi5/RocketPaperScissor';
@@ -19,9 +19,7 @@ class App extends Component {
   render() {
     return (
       //
-      <DemoFlatList />
-      // <RocketPaperScissor />
-      // <HomeWorkBuoi_4 />
+      <HomeWorkBuoi_4 />
     );
   }
 }
